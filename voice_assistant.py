@@ -104,7 +104,6 @@ def main():
         if user_input:
             print(f"\n[👤] You said: {user_input}")
 
-            print(user_input.lower().strip(" .!?"))
             # Allow user to quit via voice command
             if user_input.lower().strip(" .!?") in ["quit", "exit", "stop", "goodbye"]:
                 speak_text("Goodbye! Shutting down.", print_text=True)
